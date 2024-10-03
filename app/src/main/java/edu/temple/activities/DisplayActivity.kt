@@ -9,8 +9,6 @@ class DisplayActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display)
 
-       intent.getIntExtra(VALUE_KEY, 12)
-
         // TODO Step 3: Extract transferred value and use for lyricsDisplayView text size
         with (findViewById<TextView>(R.id.lyricsDisplayTextView)) {
             textSize = intent.getIntExtra(VALUE_KEY, 12).toFloat()
